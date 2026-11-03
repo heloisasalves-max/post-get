@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de heróis</title>
+    <link rel="stylesheet" href="../css/get.css" />
+    <script src="../js/get.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lista de heróis</h1>
+      <p>Veja abaixo a lista de heróis</p>
+    </header>
+    <main>
+      <p><a href="../index.html">Voltar para o cadastro</a></p>
+      <section id="container-titulo-lista">
+        <h2 id="titulo-lista">Heróis cadastrados</h2>
+        <p>Os heróis são exibidos automaticamente ao abrir a página</p>
+        <p id="resposta"></p>
+        <ul id="lista-destinos"></ul>
+      </section>
+    </main>
+
+    <!--Modelo para op JS copiar para cada destino-->
+    <template id="modelo-destino">
+      <li>
+        <section class="card-capa">
+          <img class="imagem-destino" alt="" />
+        </section>
+        <section class="card-conteudo">
+          <h3 class="nome"></h3>
+          <p><strong>País:</strong> <span class="pais"> </span></p>
+          <p><strong>Tipo do destino:</strong> <span class="tipo_destino"> </span></p>
+          <p><strong>Melhor epoca:</strong> <span class="melhor_epoca"> </span></p>
+          <p><strong>Custo Medio:</strong> <span class="custo_medio"> </span></p>
+        </section>
+      </li>
+    </template>
+  </body>
+</html>
